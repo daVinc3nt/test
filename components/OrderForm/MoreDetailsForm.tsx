@@ -49,7 +49,7 @@ const MoreDetailsForm = () => {
     setValue2((prevValue) => (prevValue - 1 + 51) % 51);
   };
 
-  return <div className="flex flex-col h-5/6 w-full mt-4 lg:mt-8 border-2 border-red-500 rounded-md overflow-y-auto">
+  return <div className="flex flex-col h-5/6 w-full mt-4 lg:mt-8 border-2 border-red-500 rounded-md overflow-y-auto no-scrollbar scroll-smooth">
     <motion.h1
       variants={tabContentVariants}
       initial="initial"

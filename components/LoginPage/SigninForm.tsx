@@ -25,7 +25,7 @@ const SigninForm = () => {
   const [shake, setshake] = useState(false);
 
   const buttonstyle = classNames(
-    "mt-7 py-3 px-4 w-full rounded-full text-white font-bold uppercase text-xs text-center block w-calc(100%) focus:outline-none cursor-pointer sm:mt-10 sm:text-sm transition duration-150",
+    "mt-7 py-3 px-4  w-[calc(95%)] rounded-full text-white font-bold uppercase text-xs text-center block focus:outline-none cursor-pointer sm:mt-10 sm:text-sm transition duration-150",
     {
       ["bg-indigo-200 animate-shake"]: shake,
       ["bg-indigo-600"]: !shake,
@@ -61,6 +61,7 @@ const SigninForm = () => {
       return null;
     otpCode = new OTP(phoneNumber,email);
     // Send OTP
+    console.log(otpCode);
     otpCode.sendOTP()
     .then(message => console.log(message))
     .catch(error => console.log(error));
@@ -108,7 +109,6 @@ const SigninForm = () => {
                 <h1 className="text-2xl sm:text-5xl font-bold text-indigo-900">
                   XIN CHÀO!
                 </h1>
-
                 <form className="mt-5 sm:mt-12" action="" method="POST">
                   <div className="mt-5 sm:mt-10 relative">
                   <input

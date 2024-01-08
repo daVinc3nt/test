@@ -1,7 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Order from '../components/OrderHistory/Order';
-
+import Order from '@/components/OrderHistory/Order';
 const OrderHistory: NextPage = () => {
   return (
     <div className="rounded-xl h-full w-full">

@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
 import { LoginPage } from "../components/LoginPage";
-import Head from "next/head";
-import OTPField from "../components/OtpField/OtpField";
 // import Footer from "../components/Footer/Footer";
-
+import MobileLog from "@/components/LoginPage/mobileLog";
 const LogForm: NextPage = () => {
   return (
     <>
-    <LoginPage/>
+    <div className="hidden md:block"> 
+      <LoginPage/>
+    </div>
+    <div className="block md:hidden">
+      <MobileLog/>
+    </div>
     </>
   );
 };

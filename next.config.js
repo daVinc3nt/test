@@ -10,9 +10,12 @@ const nextConfig = {
         pathname: '**',
       },
     ],
+  },
+  i18n: {
+    locales: ['en', 'vi'],
+    defaultLocale: 'en',
   }
 };
 
 module.exports = nextConfig;
 
-//the below was added from blogLGBT
